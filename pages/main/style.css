@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* 
 ======================
 header
@@ -187,7 +191,8 @@ our friends
   max-width: 1200px;
   margin: 0 auto 3.75rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  column-gap: 5.625rem;
   position: relative;
 }
 .single-card:nth-child(n + 4) {
@@ -203,7 +208,7 @@ our friends
   transition: all 300ms linear;
 }
 .single-card:hover a {
-  background: rgba(253, 220, 196, 1);
+  background: rgba(241, 205, 179, 1);
 }
 .single-card:hover {
   box-shadow: 0px 2px 35px 14px rgba(13, 13, 13, 0.04);
@@ -228,12 +233,13 @@ our friends
   font-weight: 400;
   letter-spacing: 0.06rem;
   padding: 0.9375rem 2.8125rem;
-  border: rgba(253, 220, 196, 1) solid 1px;
+  border: rgba(241, 205, 179, 1) solid 1px;
   border-radius: 6.25rem;
   transition: all 300ms linear;
 }
 .single-card a:hover {
-  background: rgba(241, 205, 179, 1);
+  border: rgba(253, 220, 196, 1) solid 1px;
+  background: rgba(253, 220, 196, 1);
 }
 #rest-btn {
   display: flex;
@@ -255,14 +261,14 @@ our friends
   transition: all 300ms linear;
 }
 #rest-btn a:hover {
-  background: none;
+  background: rgba(253, 220, 196, 1);
 }
 
 .left-btn {
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translate(-50%, -50%);
+  transform: translate(0%, -50%);
   cursor: pointer;
   background: transparent;
   border: 2px solid rgba(241, 205, 179, 1);
@@ -279,7 +285,7 @@ our friends
   position: absolute;
   top: 50%;
   right: 0;
-  transform: translate(50%, -50%);
+  transform: translate(0%, -50%);
   cursor: pointer;
   background: transparent;
   border: 2px solid #f1cdb3;
@@ -396,6 +402,10 @@ donation
   background: rgba(241, 205, 179, 1);
   border-radius: 0.5625rem;
   margin-bottom: 1.25rem;
+  transition: all 300ms linear;
+}
+.card:hover {
+  background: rgba(253, 220, 196, 1);
 }
 .card a {
   font-weight: 400;
