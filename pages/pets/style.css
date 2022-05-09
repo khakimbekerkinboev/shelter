@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 /* 
 ======================
@@ -190,7 +193,7 @@ footer {
   column-gap: 10rem;
   padding-top: 1rem;
 }
-.column h1 {
+.column h2 {
   font-weight: 400;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 2.1875rem;
