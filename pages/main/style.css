@@ -7,6 +7,9 @@
 html {
   scroll-behavior: smooth;
 }
+.menu-inactive {
+  display: none;
+}
 
 @media (max-width: 319px) {
   /* 
@@ -32,11 +35,8 @@ header
     width: 100vw;
     height: 100vh;
     z-index: 2;
-    transition: all 300ms linear;
   }
-  .menu-inactive {
-    transform: translateX(100%);
-  }
+
   .menu-top {
     margin: 1.875rem 3.3125rem 1.875rem 0.675rem;
     display: flex;

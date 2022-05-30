@@ -44,7 +44,8 @@ header {
   font-weight: 400;
   font-size: 0.8125rem;
   line-height: 0.9375rem;
-  letter-spacing: 0.01rem;
+  letter-spacing: 0.09rem;
+  margin-left: 0.1rem;
   color: #292929;
 }
 nav li {
@@ -233,6 +234,9 @@ footer {
   color: rgba(241, 205, 179, 1);
 }
 
+.menu-inactive {
+  display: none;
+}
 @media (min-width: 768px) and (max-width: 1279px) {
   header {
     padding-left: 30px;
@@ -306,11 +310,8 @@ footer {
     width: 100vw;
     height: 100vh;
     z-index: 2;
-    transition: all 300ms linear;
   }
-  .menu-inactive {
-    transform: translateX(100%);
-  }
+
   .menu-top {
     margin: 1.875rem 3.3125rem 1.875rem 0.675rem;
     display: flex;
