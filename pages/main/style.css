@@ -928,7 +928,7 @@ help
   .help-title {
     margin: 0 auto;
     text-align: center;
-    margin-bottom: 3.75rem;
+    margin-bottom: 2.625rem;
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5625rem;
     line-height: 130%;
@@ -947,8 +947,11 @@ help
     text-align: center;
   }
   .single-item img {
+    display: block;
+    margin: 0 auto;
     margin-bottom: 1.25rem;
-    transform: scale(83.3333%);
+    height: 50px;
+    width: 50px;
   }
   .single-item h1 {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -957,6 +960,7 @@ help
     color: rgba(84, 84, 84, 1);
     font-weight: 400;
     letter-spacing: 0.06rem;
+    height: 1.0625rem;
   }
 
   /* 
@@ -1054,6 +1058,7 @@ footer
   }
   .footer-center img:nth-child(3) {
     display: block;
+    width: 81.25vw;
     margin: 0 auto;
   }
 
@@ -1062,20 +1067,26 @@ footer
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5625rem;
     line-height: 130%;
-    letter-spacing: 0.06rem;
+    letter-spacing: 0.06em;
     color: rgba(255, 255, 255, 1);
     margin-bottom: 2.5rem;
     text-align: center;
+    max-width: 84.37vw;
   }
   .column {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+
   .column a {
     text-decoration: none;
     display: block;
   }
+  .column:nth-child(2) > a {
+    width: 100%;
+  }
+
   .margin-btm {
     margin-bottom: 2.5rem;
   }
@@ -1087,7 +1098,7 @@ footer
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.25rem;
     line-height: 115%;
-    letter-spacing: 0.06rem;
+    letter-spacing: 0.06em;
     color: rgba(241, 205, 179, 1);
   }
 }
