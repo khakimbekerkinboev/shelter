@@ -35,7 +35,7 @@ header {
   font-weight: 400;
   font-size: 2rem;
   line-height: 110%;
-  letter-spacing: 0.06rem;
+  letter-spacing: 0.06em;
   color: #545454;
   margin-bottom: 0.625rem;
 }
@@ -44,13 +44,16 @@ header {
   font-weight: 400;
   font-size: 0.8125rem;
   line-height: 0.9375rem;
-  letter-spacing: 0.09rem;
+  letter-spacing: 0.1em;
   margin-left: 0.1rem;
   color: #292929;
 }
+nav ul {
+  display: flex;
+  column-gap: 2.1875rem;
+}
 nav li {
   display: inline-block;
-  margin-left: 2.1875rem;
 }
 nav a {
   text-decoration: none;
@@ -92,7 +95,7 @@ our friends
   font-weight: 400;
   font-size: 2.1875rem;
   line-height: 130%;
-  letter-spacing: 0.06rem;
+  letter-spacing: 0.06em;
   color: #545454;
   margin: 0 auto 3.75rem;
   text-align: center;
@@ -127,7 +130,7 @@ our friends
   color: rgba(84, 84, 84, 1);
   font-size: 1.25rem;
   font-weight: 400;
-  letter-spacing: 0.06rem;
+  letter-spacing: 0.06em;
   line-height: 1.4375rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
   margin: 1.875rem 0;
@@ -139,7 +142,7 @@ our friends
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.0625rem;
   font-weight: 400;
-  letter-spacing: 0.06rem;
+  letter-spacing: 0.06em;
   padding: 0.9375rem 2.8125rem;
   border: rgba(241, 205, 179, 1) solid 1px;
   border-radius: 6.25rem;
@@ -167,7 +170,7 @@ our friends
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 115%;
-  letter-spacing: 0.06rem;
+  letter-spacing: 0.06em;
 }
 .pagination button:hover {
   background: #f1cdb3;
@@ -203,6 +206,8 @@ footer {
   display: flex;
   justify-content: center;
   column-gap: 10rem;
+}
+.column {
   padding-top: 1rem;
 }
 .column h2 {
@@ -210,11 +215,19 @@ footer {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 2.1875rem;
   line-height: 130%;
-  letter-spacing: 0.06rem;
+  letter-spacing: 0.06em;
   color: rgba(255, 255, 255, 1);
   margin-bottom: 2.5rem;
 }
-
+.column:nth-child(1) {
+  max-width: 17.4rem;
+}
+.column:nth-child(2) h2 {
+  margin-bottom: 1.8rem;
+}
+.column:nth-child(2) a {
+  margin-bottom: 2.3125rem;
+}
 .column a {
   text-decoration: none;
   display: block;
@@ -230,7 +243,7 @@ footer {
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.25rem;
   line-height: 115%;
-  letter-spacing: 0.06rem;
+  letter-spacing: 0.06em;
   color: rgba(241, 205, 179, 1);
 }
 
@@ -263,6 +276,7 @@ footer {
     column-gap: 5.2vw;
     margin-bottom: 2.5rem;
   }
+
   footer {
     padding-top: 1.875rem;
   }
@@ -279,11 +293,25 @@ footer {
     display: inline-block;
     vertical-align: top;
     text-align: left;
-    margin-bottom: 4.3175rem;
-    width: 18.2rem;
+    margin-bottom: 4rem;
+    padding-top: 0;
   }
   .column:nth-child(1) {
-    margin-right: 3.75rem;
+    max-width: 17.5rem;
+    margin-right: 3.5rem;
+  }
+  .column:nth-child(2) {
+    max-width: 19rem;
+  }
+  .column:nth-child(2) > h2 {
+    margin-bottom: 2rem;
+  }
+  .column:nth-child(2) a {
+    margin-bottom: 0;
+  }
+
+  .column:nth-child(2) > .margin-btm {
+    margin-bottom: 2rem;
   }
 
   .footer-center img:nth-child(3) {
@@ -291,7 +319,7 @@ footer {
     margin: 0 auto;
   }
   .column h2 {
-    font-size: 1.5625rem;
+    font-size: 2.1875rem;
   }
 }
 
@@ -354,7 +382,7 @@ footer {
     font-weight: 400;
     color: rgba(241, 205, 179, 1);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    letter-spacing: 0.06rem;
+    letter-spacing: 0.06em;
     margin-bottom: 0.5rem;
   }
   .nav-left p {
@@ -414,12 +442,15 @@ footer {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    align-items: center;
     row-gap: 2.5rem;
     padding-top: 0;
   }
   .footer-center img:nth-child(3) {
     display: block;
     margin: 0 auto;
+    width: 16.25rem;
+    height: 16.8125rem;
   }
 
   .column h2 {
@@ -427,7 +458,7 @@ footer {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5625rem;
     line-height: 130%;
-    letter-spacing: 0.06rem;
+    letter-spacing: 0.06em;
     color: rgba(255, 255, 255, 1);
     margin-bottom: 2.5rem;
     text-align: center;
@@ -436,13 +467,31 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    flex-basis: content;
+    padding-top: 0;
   }
   .column a {
     text-decoration: none;
     display: block;
   }
-  .margin-btm {
+  .column:nth-child(1) h2 {
+    max-width: 86.875vw;
+  }
+  .column:nth-child(2) h2 {
+    max-width: 84.375vw;
+    margin-bottom: 2.3rem;
+  }
+  .column:nth-child(2) a {
+    align-self: flex-start;
+  }
+  .column:nth-child(1) .margin-btm {
+    margin-bottom: 2.4rem;
+  }
+  .column:nth-child(2) .margin-btm {
     margin-bottom: 2.5rem;
+  }
+  .column:nth-child(2) a {
+    margin-bottom: 0;
   }
   .row {
     display: flex;
@@ -452,7 +501,7 @@ footer {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.25rem;
     line-height: 115%;
-    letter-spacing: 0.06rem;
+    letter-spacing: 0.06em;
     color: rgba(241, 205, 179, 1);
   }
 }
@@ -514,7 +563,7 @@ footer {
     font-weight: 400;
     color: rgba(241, 205, 179, 1);
     font-family: Georgia, 'Times New Roman', Times, serif;
-    letter-spacing: 0.06rem;
+    letter-spacing: 0.06em;
     margin-bottom: 0.5rem;
   }
   .nav-left p {
@@ -587,7 +636,7 @@ footer {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.5625rem;
     line-height: 130%;
-    letter-spacing: 0.06rem;
+    letter-spacing: 0.06em;
     color: rgba(255, 255, 255, 1);
     margin-bottom: 2.5rem;
     text-align: center;
@@ -612,7 +661,7 @@ footer {
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 1.25rem;
     line-height: 115%;
-    letter-spacing: 0.06rem;
+    letter-spacing: 0.06em;
     color: rgba(241, 205, 179, 1);
   }
 }
