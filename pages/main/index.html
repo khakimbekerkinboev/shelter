@@ -9,6 +9,7 @@
       src="https://kit.fontawesome.com/4809f3b02f.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./script.js" defer></script>
     <title>Shelter</title>
   </head>
   <body>
@@ -74,6 +75,7 @@
           <a href="#footer">Contacts</a>
         </div>
       </div>
+      <div class="mobile-menu-background"></div>
     </header>
     <!-- end of header -->
 
@@ -112,12 +114,46 @@
         Our friends who <br />
         are looking for a house
       </h1>
+      <div class="modal modal-hidden">
+        <div class="modal-content">
+          <img
+            src="../../assets/images/pets-jennifer.png"
+            alt=""
+            class="modal-left"
+          />
+          <div class="modal-right">
+            <h1></h1>
+            <h2></h2>
+            <p></p>
+            <ul>
+              <li>
+                <h3>Age: <span class="modal-age"></span></h3>
+              </li>
+              <li>
+                <h3>Inoculations: <span class="modal-inoculations"></span></h3>
+              </li>
+              <li>
+                <h3>Diseases: <span class="modal-diseases"></span></h3>
+              </li>
+              <li>
+                <h3>Parasites: <span class="modal-parasites"></span></h3>
+              </li>
+            </ul>
+          </div>
+          <span class="modal-close"
+            ><img
+              src="../../assets/icons/Vector.png"
+              alt=""
+              class="modal-close-icon"
+          /></span>
+        </div>
+      </div>
       <div class="friends-center">
         <!-- single card -->
         <div class="single-card">
           <img src="../../assets/images/pets-katrine.png" alt="pets-katrine" />
           <h1>katrine</h1>
-          <a href="">Learn more</a>
+          <a href="#">Learn more</a>
         </div>
         <!-- end of single card -->
         <!-- single card -->
@@ -127,51 +163,17 @@
             alt="pets-jennifer"
           />
           <h1>jennifer</h1>
-          <a href="">Learn more</a>
+          <a href="#">Learn more</a>
         </div>
         <!-- end of single card -->
         <!-- single card -->
         <div class="single-card">
           <img src="../../assets/images/pets-woody.png" alt="pets-woody" />
           <h1>woody</h1>
-          <a href="">Learn more</a>
+          <a href="#">Learn more</a>
         </div>
         <!-- end of single card -->
-        <!-- single card -->
-        <div class="single-card">
-          <img src="../../assets/images/pets-sophia.png" alt="pets-sophia" />
-          <h1>sophia</h1>
-          <a href="">Learn more</a>
-        </div>
-        <!-- end of single card -->
-        <!-- single card -->
-        <div class="single-card">
-          <img src="../../assets/images/pets-timmy.png" alt="pets-timmy" />
-          <h1>timmy</h1>
-          <a href="">Learn more</a>
-        </div>
-        <!-- end of single card -->
-        <!-- single card -->
-        <div class="single-card">
-          <img src="../../assets/images/pets-charly.png" alt="pets-charly" />
-          <h1>charly</h1>
-          <a href="">Learn more</a>
-        </div>
-        <!-- end of single card -->
-        <!-- single card -->
-        <div class="single-card">
-          <img src="../../assets/images/pets-scarlet.png" alt="pets-scarlet" />
-          <h1>scarlet</h1>
-          <a href="">Learn more</a>
-        </div>
-        <!-- end of single card -->
-        <!-- single card -->
-        <div class="single-card">
-          <img src="../../assets/images/pets-freddie.png" alt="pets-freddie" />
-          <h1>freddie</h1>
-          <a href="">Learn more</a>
-        </div>
-        <!-- end of single card -->
+
         <!-- left button -->
         <button class="left-btn">
           <svg
@@ -355,6 +357,5 @@
       </div>
     </footer>
     <!-- end of footer -->
-    <script src="./script.js"></script>
   </body>
 </html>
