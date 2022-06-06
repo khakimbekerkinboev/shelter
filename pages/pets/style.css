@@ -269,8 +269,7 @@ our friends
   background: #f1cdb3;
 }
 
-.pagination button:nth-child(1),
-.pagination button:nth-child(2) {
+#btn-inactive {
   color: #cdcdcd;
   border: 2px solid #cdcdcd;
   background: transparent;
