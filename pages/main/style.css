@@ -351,15 +351,20 @@ our friends
   /* End of Modal Window */
   .friends-center {
     max-width: 1200px;
+    height: 27.1875rem;
     margin: 0 auto 7.125rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .card-container {
+    margin: 0 auto;
+    width: fit-content;
     display: flex;
     justify-content: center;
     column-gap: 2.5rem;
-    position: relative;
+    transition: all 300ms linear;
   }
-  .single-card:nth-child(n + 2) {
-    display: none;
-  }
+
   .single-card {
     background: rgba(250, 250, 250, 1);
     border-radius: 0.5625rem;
@@ -1001,17 +1006,23 @@ our friends
     transition: all 300ms linear;
   }
   /* End of Modal Window */
+
   .friends-center {
     max-width: 1200px;
+    height: 27rem;
     margin: 0 auto 7.125rem;
+    position: relative;
+    overflow-x: hidden;
+  }
+  .card-container {
+    margin: 0 auto;
+    width: fit-content;
     display: flex;
     justify-content: center;
     column-gap: 2.5rem;
-    position: relative;
+    transition: all 300ms linear;
   }
-  .single-card:nth-child(n + 2) {
-    display: none;
-  }
+
   .single-card {
     background: rgba(250, 250, 250, 1);
     border-radius: 0.5625rem;
@@ -1601,15 +1612,20 @@ our friends
   /* End of Modal Window */
   .friends-center {
     max-width: 1200px;
+    height: 27.1875rem;
     margin: 0 auto 3.75rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .card-container {
+    margin: 0 auto;
+    width: fit-content;
     display: flex;
     justify-content: center;
     column-gap: 2.5rem;
-    position: relative;
+    transition: all 300ms linear;
   }
-  .single-card:nth-child(n + 3) {
-    display: none;
-  }
+
   .single-card {
     background: rgba(250, 250, 250, 1);
     border-radius: 0.5625rem;
@@ -2189,11 +2205,18 @@ our friends
 
   .friends-center {
     max-width: 1200px;
+    height: 27.1875rem;
     margin: 0 auto 3.75rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .card-container {
+    margin: 0 auto;
+    width: fit-content;
     display: flex;
     justify-content: center;
     column-gap: 5.625rem;
-    position: relative;
+    transition: all 300ms linear;
   }
 
   .single-card {
@@ -2203,7 +2226,7 @@ our friends
     flex-direction: column;
     align-items: center;
     cursor: pointer;
-    transition: all 1 linear;
+    transition: all 300ms linear;
   }
   .single-card img {
     border-top-left-radius: 0.5625rem;
